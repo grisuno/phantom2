@@ -1,0 +1,23 @@
+{
+  "tool": "readmenator",
+  "generated_at": "2026-09-16T04:43:13Z",
+  "project_root": "/tmp/readmenator_phantom2_wz41plb3",
+  "files": 3,
+  "symbols": 77,
+  "imports": 67,
+  "resolved_imports": 0,
+  "security_findings": 0,
+  "languages": {
+    "sh": 1,
+    "c": 1,
+    "py": 1
+  },
+  "entrypoints": [],
+  "start_here": "INDEX.md",
+  "workflow": [
+    "grep -n '<keyword>' INDEX.md",
+    "cat KB_<subsystem>.md",
+    "grep -n '<file>' ARCHITECTURE.md SYMBOLS.md"
+  ],
+  "regenerate": "readmenator . --rebuild"
+}
