@@ -11,7 +11,8 @@
 | `JITTER_PERCENT` | macro | `phantom.c:46` | `#define JITTER_PERCENT` |
 | `MAX_PATH` | macro | `phantom.c:49` | `#define MAX_PATH` |
 | `_GNU_SOURCE` | macro | `phantom.c:7` | `#define _GNU_SOURCE` |
-| `__io_uring_enter` | function | `phantom.c:72` | `static inline int __io_uring_enter(int fd, unsigned int to_submit, unsigned int min_complete,    ...` |
+| `__io_uring_enter` | function | `phantom.c:72` | `static inline int __io_uring_enter(int fd, unsigned int to_submit, unsigned int min_complete,
+   ...` |
 | `__io_uring_register` | function | `phantom.c:76` | `static inline int __io_uring_register(int fd, unsigned int opcode, const void *arg, unsigned int ...` |
 | `__io_uring_setup` | function | `phantom.c:69` | `static inline int __io_uring_setup(unsigned int entries, struct io_uring_params *p)` |
 | `anti_forensics` | function | `phantom.c:600` | `static void anti_forensics(void)` |

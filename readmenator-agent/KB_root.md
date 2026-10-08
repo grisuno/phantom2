@@ -51,7 +51,6 @@
   - `MAX_PATH` (macro, line 49) `#define MAX_PATH`
 
 ## server.py
-- Doc: xor_crypt: Aplica XOR con la clave definida
 - Layer: utility
 - Language: py
 - Symbols:

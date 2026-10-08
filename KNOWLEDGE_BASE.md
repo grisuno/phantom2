@@ -11,7 +11,7 @@
 
 **Total Files Parsed:** 3 | **Total Symbols Extracted:** 43 | **Total Imports:** 34
 
-<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:1e0fd0b | date:2026-07-18 -->
+<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:05a4468 | date:2026-07-18 -->
 
 
 ## Table of Contents
@@ -26,13 +26,12 @@
 8. [Change Impact Analysis](#change-impact-analysis)
 9. [Suggested Linting Rules](#suggested-linting-rules)
 10. [Dataflow Analysis](#dataflow-analysis)
-11. [Concept Graph](#concept-graph)
-12. [Orphans](#orphans)
-13. [Query Recipes](#query-recipes)
-14. [Structural Knowledge Map](#structural-knowledge-map)
-15. [UML Class Diagram](#uml-class-diagram)
-16. [Code Property Graph](#code-property-graph)
-17. [Architecture Reference](#architecture-reference)
+11. [Orphans](#orphans)
+12. [Query Recipes](#query-recipes)
+13. [Structural Knowledge Map](#structural-knowledge-map)
+14. [UML Class Diagram](#uml-class-diagram)
+15. [Code Property Graph](#code-property-graph)
+16. [Architecture Reference](#architecture-reference)
     - [C (1 files)](#c-1-files)
     - [PY (1 files)](#py-1-files)
     - [SH (1 files)](#sh-1-files)
@@ -145,24 +144,6 @@ Procedural intra-function dataflow findings (zero tokens, regex-based heuristics
 | File | Function | Line | Kind | Variable | Description |
 |------|----------|------|------|----------|-------------|
 | `server.py` | `main` | 26 | `UNCHECKED_ALLOC` | `s` | Result of allocator stored in `s` is never checked against NULL. |
-
----
-
-## Concept Graph
-
-Semantic second-brain layer: nouns are concept nodes, verbs are edges. Each noun maps atomically to a file set (EXTRACTED); each verb aggregates structural imports, calls, and inherits into consumes, invokes, extends, depends_on, or bridges (INFERRED).
-
-**3 concepts, 0 relations.**
-
-| Concept | Files | Mentions |
-|---------|-------|----------|
-| `recv` | 2 | 3 |
-| `run` | 2 | 3 |
-| `server` | 2 | 3 |
-
-### Dialectic Prompts
-
-- Thesis: `recv` centralizes 2 files; Antithesis: `server` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
 
 ---
 
