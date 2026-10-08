@@ -1,0 +1,35 @@
+{
+  "concepts": [
+    {
+      "name": "recv",
+      "files": [
+        "phantom.c",
+        "server.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "run",
+      "files": [
+        "compile_run.sh",
+        "phantom.c"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "server",
+      "files": [
+        "phantom.c",
+        "server.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [],
+  "dialectic": [
+    "Thesis: `recv` centralizes 2 files; Antithesis: `server` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?"
+  ]
+}
